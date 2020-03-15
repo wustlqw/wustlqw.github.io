@@ -1,85 +1,60 @@
+
 <!DOCTYPE html>
 <html>
-
 <head lang="en">
     <meta charset="UTF-8">
     <title>Tiny Fish</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
         }
-
-        body {
+        html,body{
+         height: 100%;
+       }
+        body{
             padding-top: 10px;
         }
-
-        .all-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            cursor: default;
-            color: #888;
-            background-color: #333;
-            text-align: center;
-            font-family: Helvetica, Verdana, Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
+        .all-bg{
+            width:  100%;
+            height:  100%;
+            margin: 0 auto;
+            position: relative;
+            background-color: aqua;
 
         }
-
-        #allcanvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            cursor: default;
-            color: #888;
-            background-color: #333;
-            text-align: center;
-            font-family: Helvetica, Verdana, Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
+        #allcanvas{
+            width:  100%;
+            height:  100%;
+            position: relative;
+            background-color: greenyellow;
 
         }
-
-        #canvas1 {
+        #canvas1{
             position: absolute;
             top: 0;
             left: 0;
             z-index: 1;
+            width:  100%;
+            height:  100%;
         }
-
-        #canvas2 {
+        #canvas2{
             position: absolute;
             top: 0;
             left: 0;
             z-index: 0;
+            width:  100%;
+            height:  100%;
 
         }
-
-        #beginBox {
+        #beginBox{
             position: absolute;
             left: 0;
             top: 0;
             z-index: 2;
         }
-
-        #btn1,
-        #btn2 {
-            color: #E4E4E4;
-            ;
+        #btn1,#btn2{
+            color: #E4E4E4;;
             border: 0 none;
             background-color: #06335C;
             width: 90px;
@@ -87,45 +62,42 @@
             left: 50%;
             top: 50%;
             margin-top: 70px;
-            margin-left: -45px;
-            font: 700 25px "microsoft yahei";
+            margin-left: 15px;
+            font:700 25px "microsoft yahei";
             z-index: 2;
         }
-
-        #btn2 {
+        #btn2{
             background-color: #09508E;
             width: 150px;
-            margin-left: -75px;
+            margin-left: 15px;
             margin-top: 50px;
         }
     </style>
 </head>
-
 <body>
-    <div class="all-bg">
-        <div id="allcanvas">
-            <canvas id="canvas1" width="800" height="600"></canvas>
-            <canvas id="canvas2" width="800" height="600"></canvas>
-        </div>
-        <div id="beginBox">
-            <img src="src/cover.png" alt="" />
-            <button id="btn1"> &nbsp;Start&nbsp;</button>
-        </div>
-        <button id="btn2" style="display: none;">Play Again</button>
-    </div>
-    <script src="js/begin.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/commonFunctions.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/ane.js"></script>
-    <script src="js/fruit.js"></script>
-    <script src="js/mom.js"></script>
-    <script src="js/collision.js"></script>
-    <script src="js/baby.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/wave.js"></script>
-    <script src="js/halo.js"></script>
-    <script src="js/dust.js"></script>
-</body>
-
-</html>
+               <div class="all-bg">
+                   <div id="allcanvas">
+                       <canvas id="canvas1" ></canvas>
+                       <canvas id="canvas2" ></canvas>
+                   </div>
+                   <div id="beginBox">
+                       <img src="src/cover.png" alt=""/>
+                       <button id="btn1"> &nbsp;Start&nbsp;</button>
+                   </div>
+                   <button id="btn2" style="display: none;">Play Again</button>
+               </div>
+               <script src="js/begin.js"></script>
+               <script src="js/main.js"></script>
+               <script src="js/commonFunctions.js"></script>
+               <script src="js/background.js"></script>
+               <script src="js/ane.js"></script>
+               <script src="js/fruit.js"></script>
+               <script src="js/mom.js"></script>
+               <script src="js/collision.js"></script>
+               <script src="js/baby.js"></script>
+               <script src="js/data.js"></script>
+               <script src="js/wave.js"></script>
+               <script src="js/halo.js"></script>
+               <script src="js/dust.js"></script>
+               </body>
+               </html>
