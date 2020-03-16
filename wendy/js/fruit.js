@@ -128,7 +128,7 @@ function fruitMonitor(){
             allnum++;
         }
     }
-    if(allnum<15){
+    if(allnum<30){
         sendFruit();
         return;
     }

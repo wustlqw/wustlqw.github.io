@@ -36,7 +36,7 @@ babyObj.prototype.init = function(){
         this.babyEye[i].src = "./src/babyEye" + i + ".png"
 
     }
-    for(var i=0;i<20;i++){
+    for(var i=0;i<30;i++){
         this.babyBody[i] = new Image();
         this.babyBody[i].src = "./src/babyFade" + i + ".png"
 
@@ -76,8 +76,8 @@ babyObj.prototype.draw = function () {
     if(this.babyBodyTimer>200){
         this.babyBodyCount = (this.babyBodyCount + 1)
         this.babyBodyTimer %= 200 ;
-        if(this.babyBodyCount > 19){
-            this.babyBodyCount = 19;
+        if(this.babyBodyCount > 29){
+            this.babyBodyCount = 29;
             data.gameOver = true;
             again();
 

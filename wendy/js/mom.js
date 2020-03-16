@@ -60,7 +60,7 @@ momObj.prototype.draw = function () {
     var deltaX = mx - this.x;
     var deltaY = my - this.y;
     var beta = Math.atan2(deltaY,deltaX)+Math.PI;
-    this.angle = lerpAngle(beta,this.angle,0.1)
+    this.angle = lerpAngle(beta,this.angle,0.3)
 
     this.momTailTimer += deltaTime;
     if(this.momTailTimer>50){
