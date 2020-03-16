@@ -1,5 +1,5 @@
 /**
- * Created by zdx on 2016/9/7.
+ * Created by lqw on 2020/3/16.
  */
 var waveObj = function () {
     this.x = [];
